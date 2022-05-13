@@ -1,0 +1,1 @@
+Here is the result : Hello this is the first txt file., Hello World. Here is what the first file contains: Hello this is the first txt file.

@@ -1,6 +1,3 @@
-// 10. Built-in Modules: HTTP
-// Setup a web server (Basics)
-
 const http = require("http");
 
 const server = http.createServer((req, res) => {

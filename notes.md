@@ -16,3 +16,7 @@ In NPM there's no control, everyone can publish whatever they want. Don't downlo
   - Manual approach, create file in the root.
   - `npm init` (step by step setup)
   - `npm init -y` (everything default)
+
+# Nodedom
+
+Install as a dev dependency with `npm install --save-dev nodemon`. Useful for autoload the application at every changes.

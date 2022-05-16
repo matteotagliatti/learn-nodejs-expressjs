@@ -1,0 +1,23 @@
+{
+  "name": "learn-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon 11/autoupdate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteotagliatti/learn-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteotagliatti/learn-nodejs/issues"
+  },
+  "homepage": "https://github.com/matteotagliatti/learn-nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

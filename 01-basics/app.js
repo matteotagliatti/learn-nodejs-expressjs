@@ -108,8 +108,14 @@ readFile("./08/first.txt", "utf8", (err, res) => {
 
 // 10. Built-in Modules: HTTP
 // Setup a web server (Basics)
-
 /* Run 'node 10/server.js' */
 
 // 11. Autoupdate
 /* In package.json we have specify a 'start' script that run and reload at every changes our file 11/autoload.js. We have done this preaviously installing a dev dependancy called 'nodemon' */
+
+// 12. Event Loop
+/* What allow Node.js non-blocking I/O operations, despite JS is single-thread, by offloading opearations to the system kernel whenever possibile. */
+// Examples in 12 dir
+
+// 13. Async
+// in 13 dir we can find two files. One with server with blocking code (non-async) and the other with server with async code using different methods.

@@ -20,6 +20,6 @@ In NPM there's no control, everyone can publish whatever they want. Don't downlo
   - or remove the dir in `/node_modules`, from `package.json`, delete `package-lock.json` and, at the end, run `npm install`. With this approach we reinstall all the modules from the scratch.
 - `package-lock.json` is useful for managing the version of our dependancies.
 
-# Nodedom
+## Nodedom
 
 Install as a dev dependency with `npm install --save-dev nodemon`. Useful for autoload the application at every changes.

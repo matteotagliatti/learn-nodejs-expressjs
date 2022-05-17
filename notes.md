@@ -20,11 +20,7 @@ In NPM there's no control, everyone can publish whatever they want. Don't downlo
   - or remove the dir in `/node_modules`, from `package.json`, delete `package-lock.json` and, at the end, run `npm install`. With this approach we reinstall all the modules from the scratch.
 - `package-lock.json` is useful for managing the version of our dependancies.
 
-## Nodedom
-
-Install as a dev dependency with `npm install --save-dev nodemon`. Useful for autoload the application at every changes.
-
-# 01 Basics
+## 01 Basics
 
 1. Var and If
 2. Globals Variables
@@ -38,9 +34,10 @@ Install as a dev dependency with `npm install --save-dev nodemon`. Useful for au
    - Async is different to Sync because if the Sync can do only a single task per time. If there is a user that is user that is doing a long task all our resources are dedicated to him, but we don't want that to happen. We don't want that Node is occupied with only this task. Thanks to Async we can do multiple tasks at one time.
 10. Built-in Modules: HTTP
     - Setup a web server (Basics)
-    - Run 'node 10/server.js'
+    - Run `node 10/server.js`
 11. Autoupdate
-    - In package.json we have specify a 'start' script that run and reload at every changes our file 11/autoload.js. We have done this preaviously installing a dev dependancy called 'nodemon'
+    - Install as a dev dependency with `npm install --save-dev nodemon`. Useful for autoload the application at every changes.
+    - In package.json we have specify a `start` script that run and reload at every changes our file `11/autoload.js`. We have done this preaviously installing a dev dependancy called `nodemon`
 12. Event Loop
     - What allow Node.js non-blocking I/O operations, despite JS is single-thread, by offloading opearations to the system kernel whenever possibile.
     - Examples in 12 dir

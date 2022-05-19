@@ -20,6 +20,10 @@ In NPM there's no control, everyone can publish whatever they want. Don't downlo
   - or remove the dir in `/node_modules`, from `package.json`, delete `package-lock.json` and, at the end, run `npm install`. With this approach we reinstall all the modules from the scratch.
 - `package-lock.json` is useful for managing the version of our dependancies.
 
+## 00 JS Async Recap
+
+The **Promise** is an object that represents the eventual completion (or failure) of an async operation and it's value. The **Await** operator is used to wait for a _Promise_. It can be used with function with the **Async** keyword.
+
 ## 01 Basics
 
 1. Var and If

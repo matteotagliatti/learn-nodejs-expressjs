@@ -20,8 +20,8 @@ const getFruitNoKeyword = (name) => {
   return Promise.resolve(fruits[name]);
 };
 
-getFruit("peach").then(console.log);
-getFruitNoKeyword("strawberry").then(console.log);
+getFruit("peach").then(console.log); // 1.
+getFruitNoKeyword("strawberry").then(console.log); // 2.
 
 // Async + Await
 const makeSmoothie = async () => {
@@ -30,9 +30,9 @@ const makeSmoothie = async () => {
   return ["3. ", a, b];
 };
 
-makeSmoothie().then(console.log);
+makeSmoothie().then(console.log); // 3.
 
-// Alternative way for the function above but with Promises. A lot more code and a lot more complexity then the first example
+// Alternative way for the function above but with Promises. A lot more code and a lot more complexity then the first example.
 const makeSmoothie2 = () => {
   let a;
   return getFruit("pineapple")
@@ -53,12 +53,11 @@ const makeSmoothieFaster = async () => {
   const a = getFruit("pineapple");
   const b = getFruit("strawberry");
 
-  const smoothie = await Promise.all(["4.", a, b]); // This tell both the promies in our array to run concurrently and have the result in the same time.
-
+  const smoothie = await Promise.all(["4.", a, b]); // This tell both the promises in our array to run concurrently and have the result in the same time.
   return smoothie;
 };
 
-makeSmoothieFaster().then(console.log);
+makeSmoothieFaster().then(console.log); // 4.
 
 // Async/Await error handling with try/catch
 const badSmoothie = async () => {
@@ -71,8 +70,8 @@ const badSmoothie = async () => {
 
     return smoothie; // This code will not be executed
   } catch (err) {
-    console.log(err);
-    throw `5. 💩 It's ${err}!`;
+    /* console.log(err); */
+    return `5. 💩 ${err}`;
   }
 };
 

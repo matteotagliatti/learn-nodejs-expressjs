@@ -1,3 +1,8 @@
+/* 
+  Event Loop
+    - What allow Node.js non-blocking I/O operations, despite JS is single-thread, by offloading opearations to the system kernel whenever possibile.
+*/
+
 const http = require("http");
 
 const server = http.createServer((req, res) => {

@@ -6,7 +6,7 @@ const { readFileSync } = require("fs"); // we use the Sync version of readFile b
   SETUP FIRST SIMPLE SERVER
 */
 
-const indexPage = readFileSync("./index.html"); // Get all the files
+const indexPage = readFileSync("./content/index.html"); // Get all the files
 
 const server = http.createServer((req, res) => {
   // req is the request object, res is the response object. Request is when a client sends a request to the server. Response is when the server sends a response to the client.
@@ -37,8 +37,8 @@ server.listen(5000); // listen on port 5000
   SETUP SECOND NAVBAR APP SERVER
 */
 
-const homePage = readFileSync("./navbar-app/index.html");
-const homeStyles = readFileSync("./navbar-app/styles.css");
+const homePage = readFileSync("./content/navbar-app/index.html");
+const homeStyles = readFileSync("./content/navbar-app/styles.css");
 
 const server2 = http.createServer((req, res) => {
   const url = req.url;
